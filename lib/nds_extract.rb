@@ -6,6 +6,7 @@ require 'directors_database'
 
 
 def gross_for_director(nds, row)
+  
   total = 0 
   
   
