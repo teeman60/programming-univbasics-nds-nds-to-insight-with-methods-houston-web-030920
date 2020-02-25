@@ -10,8 +10,8 @@ def gross_for_director(nds)
   
   
   column = 0 
-    while column < nds[row][:movies].length do
-      total += nds[row][:movies][column][:worldwide_gross]
+    while column < nds[:movies].length do
+      total += nds[:movies][column][:worldwide_gross]
       column += 1 
     end
     
