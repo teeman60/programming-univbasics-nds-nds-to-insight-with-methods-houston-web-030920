@@ -14,7 +14,7 @@ def gross_for_director(director_data)
       column += 1 
     end
     
-    total
+    return total
 
 end
 
