@@ -6,9 +6,8 @@ require 'directors_database'
 def gross_for_director(director_data)
   total = 0 
   
-  director_data = 0 
-  while director_data <  column = 0 
-    while column < nds[row][:movies].length do
+  inner_row = 0 
+    while inner_row < director_data[column][:movies].length do
   
   
   
@@ -25,9 +24,13 @@ def directors_totals(nds)
   row = 0 
   
   while row < nds.length do
+    column = 0 
+    while column < nds[row].length do
    
       result[nds[row][:name]] = gross_for_director(director_data)
       
+      column += 1 
+    end
     
     row += 1 
   end
