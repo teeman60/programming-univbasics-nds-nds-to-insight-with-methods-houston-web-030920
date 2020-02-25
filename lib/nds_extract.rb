@@ -6,6 +6,7 @@ require 'directors_database'
 def gross_for_director(director_data)
   
   
+  
 
 end
 
@@ -21,7 +22,7 @@ def directors_totals(nds)
   while row < nds.length do
     column = 0 
     while column < nds[row][:movies].length do
-      result[nds[row][:movies][:worldwide_gross]] = gross_for_director(director_data)
+      result[nds[row][:name]] = gross_for_director(director_data)
       column += 1 
     end
     row += 1 
