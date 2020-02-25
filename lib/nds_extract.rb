@@ -5,7 +5,7 @@ require 'directors_database'
 # using director_data as input
 
 
-def gross_for_director(nds, row)
+def gross_for_director(nds)
   total = 0 
   
   
