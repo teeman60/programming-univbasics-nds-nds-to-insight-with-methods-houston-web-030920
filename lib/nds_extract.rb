@@ -15,5 +15,11 @@ end
 # { directorOne => allTheMoneyTheyMade, ... }
 def directors_totals(nds)
   result = {}
+  
+  row = 0 
+  
+  while row < nds.length do
+    column = 0 
+    while column < nds[row][]
   nil
 end
